@@ -20,46 +20,46 @@ store-ratings-monorepo/
 ├── backend/
 │   ├── package.json
 │   ├── src/
-│   │   ├── index.js                    # Server entry point
-│   │   ├── app.js                      # Express app configuration
-│   │   ├── config.js                   # Environment configuration
-│   │   ├── db.js                       # PostgreSQL pool setup
+│   │   ├── index.js                    
+│   │   ├── app.js                      
+│   │   ├── config.js                   
+│   │   ├── db.js                       
 │   │   ├── middleware/
-│   │   │   ├── auth.js                 # JWT authentication & role authorization
-│   │   │   └── validate.js             # Request validation middleware
+│   │   │   ├── auth.js                 
+│   │   │   └── validate.js             
 │   │   ├── utils/
-│   │   │   ├── validators.js           # Reusable validation rules
-│   │   │   └── sql.js                  # SQL query builder helpers
+│   │   │   ├── validators.js           
+│   │   │   └── sql.js                  
 │   │   └── routes/
-│   │       ├── auth.js                 # Signup, login, password update
-│   │       ├── admin.js                # Admin dashboard & management endpoints
-│   │       ├── stores.js               # Store listing and rating endpoints
-│   │       └── owner.js                # Store owner dashboard endpoints
+│   │       ├── auth.js                 
+│   │       ├── admin.js                
+│   │       ├── stores.js               
+│   │       └── owner.js                
 │   └── migrations/
-│       ├── 001_init.sql                # Initial schema (users, stores, ratings tables)
-│       ├── 002_indexes.sql             # Database indexes for performance
-│       └── 003_sample_seed.sql         # Sample data (optional)
+│       ├── 001_init.sql                
+│       ├── 002_indexes.sql             
+│       └── 003_sample_seed.sql         
 │
 ├── frontend/
 │   ├── package.json
-│   ├── vite.config.js                  # Vite configuration
-│   ├── index.html                      # HTML entry point
+│   ├── vite.config.js                  
+│   ├── index.html                      
 │   └── src/
-│       ├── main.jsx                    # React app initialization
-│       ├── App.jsx                     # Main app component with routing
-│       ├── api.js                      # Axios instance with token interceptor
+│       ├── main.jsx                    
+│       ├── App.jsx                     
+│       ├── api.js                      
 │       ├── context/
-│       │   └── AuthContext.jsx         # Authentication context & state management
+│       │   └── AuthContext.jsx         
 │       ├── components/
-│       │   ├── Navbar.jsx              # Navigation bar with role-based links
-│       │   ├── ProtectedRoute.jsx      # Route protection by role
-│       │   └── SortableTh.jsx          # Table header with sorting UI
+│       │   ├── Navbar.jsx              
+│       │   ├── ProtectedRoute.jsx      
+│       │   └── SortableTh.jsx          
 │       └── pages/
-│           ├── Login.jsx               # Login page
-│           ├── Signup.jsx              # User signup page
-│           ├── AdminDashboard.jsx      # Admin dashboard with users/stores management
-│           ├── Stores.jsx              # Store listing & rating page
-│           └── OwnerDashboard.jsx      # Store owner dashboard
+│           ├── Login.jsx               
+│           ├── Signup.jsx              
+│           ├── AdminDashboard.jsx      
+│           ├── Stores.jsx              
+│           └── OwnerDashboard.jsx      
 │
 ├── .gitignore
 └── README.md
